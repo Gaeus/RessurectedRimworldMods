@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation  MayRequire="StatistNo1.Arcadiusgift" Class="PatchOperationSequence">
+		<success>Normal</success>
+		<operations>
+			<li MayRequire="VanillaExpanded.VPsycastsE" Class="PatchOperationSequence">
+				<success>Normal</success>
+				<operations>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/IncidentDef[defName="VPE_EltexMeteorite"]/label</xpath>
+						<value>
+							<label>Arcadius’ magical kidney stone</label>
+						</value>
+					</li>
+					<li Class="PatchOperationReplace">
+						<xpath>Defs/IncidentDef[defName="VPE_EltexMeteorite"]/letterLabel</xpath>
+						<value>
+							<letterLabel>Arcadius’ magical kidney stone</letterLabel>
+						</value>
+					</li>
+				</operations>
+			</li>
+		</operations>
+	</Operation>
+
+
+
+
+</Patch>
